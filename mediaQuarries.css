@@ -1,0 +1,123 @@
+@media (max-width:950px){
+    .slider-content{
+        overflow: hidden;
+    }
+    .menu{
+        position: absolute;
+        top: var(--nav-height);
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: center;
+        transform: scaleY(0);
+        background-color: rgba(255, 0, 0, 0.301);
+        background-image: linear-gradient(to left,rgba(255, 0, 0, 0.301),rgb(48, 48, 48));
+        transform-origin: top;
+        transition: 500ms;
+    }
+    .menu li a{
+        font-size: 1.5rem;
+    }
+    .menu li{
+        margin: 10px 0;
+    }
+    .right-bar{
+        /* position: relative; */
+        justify-content: end;
+    }
+    #toggler-btn{
+        display: block;
+        position: absolute;
+        right: 20px;
+        font-size: 1.5rem;
+    }
+    #toggle-Check:checked~.right-bar>.menu{
+        transform: scaleY(1);
+    }
+    .offers{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .offers >div{
+        margin: 20px 20px;
+     }
+     footer>div.left>ul>li>a,
+footer>div.right>ul>li>a{
+   font-size: 1rem;
+}
+     footer>div.left h3,
+     footer>div.middle h3,
+footer>div.right h3{
+   font-size: 1.3rem;
+}
+    }
+    @media (max-width:500px){
+        .other-items{
+            display:none ;
+        }
+        .subscribe-box input{
+            font-size: 15px;
+        }
+        .subscribe-box button{
+            font-size: 15px;
+        }
+        .bottom{
+            justify-content: center;
+        }
+    }
+    @media (max-width:600px){
+        .addsContent h1{
+            font-size: 1.5rem;
+        }
+        .addsContent button{
+            font-size: 1rem;
+        }
+        .slider-content{
+            position: absolute;
+            top: var(--nav-height);
+            padding: 80px 80px;
+            text-transform: uppercase;
+            line-height: 30px;
+        }
+        .slider-content h1{
+        font-size: 2rem;
+        }
+        .slider-content h2{
+        font-size: 1.2rem;
+        line-height: 20px;
+        margin-bottom: 13px;
+        }
+        .slider-content p{
+            font-size: 15px;
+            line-height: 1.4;
+        }
+        .slider-content button{
+            font-size: 1rem;
+        }
+        .sellerNavigator h2{
+            font-size: 1rem;
+        }
+        .sellerNavigator p{
+            font-size: 0.7rem;
+        }
+    }
+    @media (max-width:800px){
+        .newest{
+            flex-wrap: wrap;
+        }
+        .newest .starter{
+            justify-content: center;
+            align-items: center;
+        }
+        footer{
+            flex-direction: column;
+            justify-content: center;
+        }
+        div.left,
+        div.right,
+        div.middle{
+            align-items: center;
+            margin: 15px 0;
+            text-align: center;
+        }
+    }
